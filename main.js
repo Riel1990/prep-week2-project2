@@ -26,7 +26,7 @@ document.getElementById("q0").classList.add("status-good");
 //    Use any method you choose to add at least 4 items to it.
 // var countries = [ "Israel", " Greece" , " Spain" , " Latvia"];
 var countries = []
-
+countries.push("Isreal", " Greece", " Spain"," latvia");
 document.getElementById("q1").innerHTML = countries;
 console.log(countries);
 
@@ -77,12 +77,12 @@ for (i = 0; i < countries.length; i++) {
 
 
 // Use the following Array for questions 6-9:
-var things = ['mug', 'book', 'mouse', 'plant', 'sunglasses'];
+var things = ["mug", "book", "mouse", "plant", "sunglasses"];
 
 // 6. Change 'mouse' to 'keyboard'
-var things = ['mug', 'book', 'mouse', 'plant', 'sunglasses'];
-things[2] = 'keyboard';
-document.getElementBYId('q6').innerHTML = things;
+var things = [" mug", " book", " mouse", " plant", " sunglasses"];
+things[2] = "keyboard";
+document.getElementById("q6").innerHTML = things;
 console.log(things);
 
 
@@ -103,8 +103,8 @@ console.log(stuff);
 
 
 // 8. Remove the first item.
-var things = ['mug', ' book','mouse', 'plant', 'sunglasses']
-things.splice(0,1);
+var things = [' mug', ' book',' mouse', ' plant', ' sunglasses'];
+things.splice(0, 1);
 document.getElementById('q8').innerHTML = things;
 console.log(things);
 
@@ -116,7 +116,13 @@ console.log(things);
 
 
 
+
+
 // 9. Remove all items from the things array.
+var things = [' mug', ' book',' mouse', ' plant', ' sunglasses'];
+things.splice(0, 5);
+document.getElementById('q9').innerHTML = things;
+console.log(things);
 
 
 
@@ -129,9 +135,12 @@ console.log(things);
 var people = ['Bill', 'Ted', 'Emily', 'Andrea', 'Doug'];
 
 // 10. Arrange the items alphabetically. Store this Array as orderedPeople
-var people = ['Bill', 'Ted', 'Emily', 'Andrea', 'Doug'];
+var people = ['Bill', 'Ted', 'Emily', 'Andrea', 'Doug',];
 people.sort();
 document.getElementById('q10').innerHTML = people;
+console.log(people);
+
+
 
 
 
