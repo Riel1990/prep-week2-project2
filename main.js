@@ -135,7 +135,7 @@ console.log(things);
 var people = ['Bill', 'Ted', 'Emily', 'Andrea', 'Doug'];
 
 // 10. Arrange the items alphabetically. Store this Array as orderedPeople
-var people = ['Bill', 'Ted', 'Emily', 'Andrea', 'Doug',];
+var people = ['Bill', 'Ted', 'Emily', 'Andrea', 'Doug'];
 people.sort();
 document.getElementById('q10').innerHTML = people;
 console.log(people);
@@ -156,18 +156,9 @@ var array2 = ["Bulldog", "Lab", "Dalmation", "Beagle"]
 var array3 = ["White", "Black", "Spotted", "Tri-color"]
 
 // Goal:
-var array4 = [
-                ["Fido", "Spot", "Rex", "Sparky"],
-                ["Bulldog", "Lab", "Dalmation", "Beagle"],
-                ["White", "Black", "Spotted", "Tri-color"]
-              ]
-
-              var array1 = ["Fido", "Spot", "Rex", "Sparky"]
-              var array2 = ["Bulldog", "Lab", "Dalmation", "Beagle"]
-              var array3 = ["White", "Black", "Spotted", "Tri-color"]
-              var array4 = [array1, array2, array3];
-              document.getElementById('q11').innerHTML = array4;
-              console.log(array4);
+var array4 = [array1, array2, array3];
+  document.getElementById("q11").innerHTML = array4;
+  console.log(array4);
 
 
 
@@ -184,18 +175,26 @@ var array4 = [
 
 
 
+
 // ADVANCED TRACK
 // Use the following campingItems array for question 13
 var campingItems = ['tent', 'hiking boots', 'picnic table', 'corn on the cob', 'cooler'];
 
 // 13. Declare an array called lastItem using .pop() on the campingItems array.
-
-
+var campingItems = ['tent', 'hiking boots', 'picnic table', 'corn on the cob', 'cooler'];
+var lastItem = campingItems.pop();
+document.getElementById("q13").innerHTML = campingItems;
+console.log(campingItems);
 
 
 
 
 // 14. Add two new items to lastItem, one at the beginning and one at the end.
+var campingItems = ['tent', 'hiking boots', 'picnic table', 'corn on the cob', 'cooler'];
+campingItems.push("beer");
+campingItems.unshift("cervezas");
+document.getElementById("q14").innerHTML = campingItems;
+console.log(campingItems);
 
 
 
@@ -203,6 +202,12 @@ var campingItems = ['tent', 'hiking boots', 'picnic table', 'corn on the cob', '
 
 
 // 15. Add s'mores to the lastItem array.
+var lastItem =();
+lastItem.push("s'mores");
+document.getElementById("q15").innerHTML = lastItem;
+console.log(lastItem);
+
+
 
 
 
@@ -211,7 +216,9 @@ var campingItems = ['tent', 'hiking boots', 'picnic table', 'corn on the cob', '
 
 // 16. Create a new Array called reversedItems.
 //    The items should be the same as lastItem, only in reverse order.
-
+var reversedItems =();
+document.getElementById("q16").innerHTML = numberpets;
+console.log(reversedItems);
 
 
 
@@ -220,7 +227,9 @@ var campingItems = ['tent', 'hiking boots', 'picnic table', 'corn on the cob', '
 //     called numberPets whose value is [12, 5, 9, 27, 'fish', 'dog']
 var firstArray = [12, 5, 9, 27];
 var secondArray = ['fish', 'dog'];
-
+var numberpets = [firstArray, secondArray;]
+document.getElementById("q17").innerHTML = numberpets;
+console.log(numberpets);
 
 
 
@@ -228,6 +237,11 @@ var secondArray = ['fish', 'dog'];
 // 18: Try to arrange the following items from smallest to largest:
 var sortingNumbers = [2, 5, 98, 55, 77, 300];
 // If it doesn't sort as expected, explain why.
+sortingNumbers.sort(function(a, b,)){
+return a - b
+});
+document.getElementById("q18").innerHTML = sortingNumbers;
+console.log(sortingNumbers);
 
 
 
