@@ -5,8 +5,8 @@
 Below are a number of problems for you to solve
 using JS. The JS code can be written below each
 problem and the results can be displayed into the
-HTML page. In some cases, you may want to check 
-within the console for verification of the array. 
+HTML page. In some cases, you may want to check
+within the console for verification of the array.
 
 console.log();
 
@@ -24,6 +24,13 @@ document.getElementById("q0").classList.add("status-good");
 
 // 1. Declare a variable whose value is an empty array.
 //    Use any method you choose to add at least 4 items to it.
+// var countries = [ "Israel", " Greece" , " Spain" , " Latvia"];
+var countries = []
+
+document.getElementById("q1").innerHTML = countries;
+console.log(countries);
+
+
 
 
 
@@ -31,6 +38,10 @@ document.getElementById("q0").classList.add("status-good");
 
 
 // 2. Add an additional item to the beginning of your array.
+countries.unshift("andora ")
+document.getElementById("q2").innerHTML = countries;
+console.log(countries)
+
 
 
 
@@ -38,21 +49,27 @@ document.getElementById("q0").classList.add("status-good");
 
 
 // 3. Remove the second and third items in your array.
-
-
+countries.splice(2, 1);
+countries.splice(1, 1);
+document.getElementById("q3").innerHTML = countries;
+console.log(countries)
 
 
 
 
 // 4. Add two new items after the second item.
-
-
-
+countries.splice(3,0,  "Brasil", " Cuba");
+document.getElementById("q4").innerHTML = countries
+console.log(countries)
 
 
 
 // 5. Log to the console: 'The current length of the array is....' using the .length method
-
+var countries = [ "Israel", " Greece" , " Spain" , " Latvia"];
+for (i = 0; i < countries.length; i++) {
+  document.getElementById("q5").innerHTML = countries
+  console.log(countries)
+}
 
 
 
@@ -63,7 +80,10 @@ document.getElementById("q0").classList.add("status-good");
 var things = ['mug', 'book', 'mouse', 'plant', 'sunglasses'];
 
 // 6. Change 'mouse' to 'keyboard'
-
+var things = ['mug', 'book', 'mouse', 'plant', 'sunglasses'];
+things[2] = 'keyboard';
+document.getElementBYId('q6').innerHTML = things;
+console.log(things);
 
 
 
@@ -71,6 +91,11 @@ var things = ['mug', 'book', 'mouse', 'plant', 'sunglasses'];
 
 // 7. Combine all of the elements of the array into a string.
 //    (Hint: check out the 'join' method.)
+var things = ['mug', 'book', 'mouse', 'plant', 'sunglasses'];
+var stuff = things.join();
+document.getElementById('q7').innerHTML = stuff;
+console.log(stuff);
+
 
 
 
@@ -78,6 +103,11 @@ var things = ['mug', 'book', 'mouse', 'plant', 'sunglasses'];
 
 
 // 8. Remove the first item.
+var things = ['mug', ' book','mouse', 'plant', 'sunglasses']
+things.splice(0,1);
+document.getElementById('q8').innerHTML = things;
+console.log(things);
+
 
 
 
@@ -94,10 +124,16 @@ var things = ['mug', 'book', 'mouse', 'plant', 'sunglasses'];
 
 
 
+
 // Use the following array for question 10:
 var people = ['Bill', 'Ted', 'Emily', 'Andrea', 'Doug'];
 
 // 10. Arrange the items alphabetically. Store this Array as orderedPeople
+var people = ['Bill', 'Ted', 'Emily', 'Andrea', 'Doug'];
+people.sort();
+document.getElementById('q10').innerHTML = people;
+
+
 
 
 
@@ -117,6 +153,13 @@ var array4 = [
                 ["White", "Black", "Spotted", "Tri-color"]
               ]
 
+              var array1 = ["Fido", "Spot", "Rex", "Sparky"]
+              var array2 = ["Bulldog", "Lab", "Dalmation", "Beagle"]
+              var array3 = ["White", "Black", "Spotted", "Tri-color"]
+              var array4 = [array1, array2, array3];
+              document.getElementById('q11').innerHTML = array4;
+              console.log(array4);
+
 
 
 
@@ -124,6 +167,7 @@ var array4 = [
 
 
 // 12. Remove "Sparky" and "White" from the above array of arrays.
+
 
 
 
@@ -188,11 +232,11 @@ var sortingNumbers = [2, 5, 98, 55, 77, 300];
 
 /* SANDBOX TRACK
 
-Solving all of these problems is a great step in the right direction, 
-but the next step is coming up with your own arrangements to solve 
+Solving all of these problems is a great step in the right direction,
+but the next step is coming up with your own arrangements to solve
 new problems. Practice creating your own problems to solve and their solutions -
-you can even challenge your classmates! 
- 
-Also, consider how you can add/remove CSS styles to create added presentation with the results. 
+you can even challenge your classmates!
+
+Also, consider how you can add/remove CSS styles to create added presentation with the results.
 
 */
